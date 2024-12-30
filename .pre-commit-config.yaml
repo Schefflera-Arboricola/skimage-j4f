@@ -1,0 +1,16 @@
+# Install pre-commit hooks via
+# pre-commit install
+
+repos:
+  - repo: https://github.com/adamchainz/blacken-docs
+    rev: 1.18.0
+    hooks:
+      - id: blacken-docs
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.7
+    hooks:
+      - id: ruff
+        args:
+          - --fix
+      - id: ruff-format
+
