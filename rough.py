@@ -2,7 +2,7 @@ import skimage as ski
 import numpy as np
 import os
 
-os.environ["SKIMAGE_NO_DISPATCHING"] = "0"
+os.environ["SKIMAGE_BACKENDS"] = "j4f"
 
 from importlib.metadata import entry_points
 
